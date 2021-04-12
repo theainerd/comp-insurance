@@ -146,7 +146,7 @@ model_free,val_acc_free = train_model(model, chosen_loss_c, optimizer_conv, exp_
                        K,ccp,num_epochs=args.epochs,meta_method = 'free')
 
 model_ga,val_acc_ga = train_model(model, chosen_loss_c, optimizer_conv, exp_lr_scheduler,
-                       K,ccp,num_epochs=args.epochs,meta_method='ga')
+                       K,ccp,num_epochs=args.epochs,meta_method='pc')
 
 model_nn,val_acc_nn = train_model(model, chosen_loss_c, optimizer_conv, exp_lr_scheduler,
                        K,ccp,num_epochs=args.epochs,meta_method = 'nn')
